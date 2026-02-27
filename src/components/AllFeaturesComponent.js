@@ -103,7 +103,7 @@ const FeatureDetails = () => (
             title="Time & Attendance"
             description="Track time-off requests, attendance, and leave balances. Automated approval workflows and calendar integration keep everyone in sync."
             benefits={["Leave management", "Shift scheduling", "Time tracking", "Calendar sync"]}
-        image="/Timesheet.png" 
+        image="/Attendence.png" 
         />
 
         <FeatureCard
@@ -111,7 +111,7 @@ const FeatureDetails = () => (
             title="HR Analytics"
             description="Make data-driven decisions with powerful analytics dashboards. Track turnover, engagement, headcount trends, and more."
             benefits={["Custom dashboards", "Headcount planning", "Turnover analysis", "Export reports"]}
-            image="/chart.png" 
+            image="/HR analytics.png" 
         />
 
     </div>

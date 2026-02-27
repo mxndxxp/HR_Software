@@ -7,7 +7,7 @@ import { Check, X, ArrowRight, Minus } from 'lucide-react';
 // Calculates the yearly price with a 15% discount and rounds to the nearest whole number for clean display.
 const calculateYearlyPrice = (monthlyPrice) => {
     // Price per year = (Monthly Price * 12) * 0.85
-    const yearlyTotal = monthlyPrice * 12 * 0.85;
+    const yearlyTotal = monthlyPrice * 12 ;
     return Math.round(yearlyTotal);
 };
 
@@ -16,8 +16,8 @@ const calculateYearlyPrice = (monthlyPrice) => {
 const pricingPlans = [
     {
         name: "Starter",
-        monthlyPrice: 24,
-        yearlyPrice: calculateYearlyPrice(24),
+        monthlyPrice: 99,
+        yearlyPrice: calculateYearlyPrice(99),
         description: "Perfect for small teams getting started with HR.",
         features: [
             "Up to 25 employees",
@@ -33,8 +33,8 @@ const pricingPlans = [
     },
     {
         name: "Professional",
-        monthlyPrice: 66,
-        yearlyPrice: calculateYearlyPrice(66),
+        monthlyPrice: 399,
+        yearlyPrice: calculateYearlyPrice(399),
         description: "For growing companies that need more power.",
         features: [
             "Up to 100 employees",
@@ -50,8 +50,8 @@ const pricingPlans = [
     },
     {
         name: "Enterprise",
-        monthlyPrice: 166,
-        yearlyPrice: calculateYearlyPrice(166),
+        monthlyPrice: "Custom",
+        yearlyPrice: "Custom",
         description: "For large organizations with complex HR needs.",
         features: [
             "Unlimited employees",
@@ -135,7 +135,7 @@ const PricingCard = ({ plan, billingCycle }) => {
             <p className="mt-2 text-sm text-gray-600">{plan.description}</p>
 
             <p className="mt-4">
-                <span className="text-4xl font-extrabold text-gray-900">${displayPrice}</span>
+                <span className="text-4xl font-extrabold text-gray-900">₹{displayPrice}</span>
                 <span className="text-base font-medium text-gray-600 ml-1">{displayInterval}</span>
             </p>
 
@@ -208,7 +208,7 @@ export default function PricingComponent() {
                     Simple, <span className="text-fuchsia-600">Transparent</span> Pricing
                 </h1>
                 <p className="mt-4 text-xl text-gray-600">
-                    Choose the plan that fits your organization, and get a 14-day free trial.
+                    Choose the plan that fits your organization, and get a 7-day free trial.
                 </p>
 
                 {/* Billing Toggle (Monthly/Yearly) */}

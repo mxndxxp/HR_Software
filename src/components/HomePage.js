@@ -338,7 +338,7 @@ export default function HomePageComponent() {
                                 </span>
                             </h1>
                             <p className="mt-6 text-xl text-gray-700 max-w-lg">
-                                Streamline recruitment, onboarding, payroll, and performance management with our all-in-one HR platform built for modern teams.
+                               AI-powered HR platform that handles your entire employee lifecycle from hiring to payroll to performance. Manage everything in one intelligent system built for teams of 10 to 500+.
                             </p>
 
                             {/* CTAs */}
@@ -377,7 +377,7 @@ export default function HomePageComponent() {
                         {/* HERO METRICS CARD */}
                         {/* <HeroMetricsCard /> */}
                        <Image
-                        src="/chat.png" 
+                        src="/home.png" 
                         alt="Chat Icon" 
                         width={700}
                         height={700}/>
@@ -402,16 +402,7 @@ export default function HomePageComponent() {
 
                 {/* 4. WORKFLOW FEATURES SECTION */}
                 <WorkflowFeaturesSection />
-                
-                <div className="flex justify-center items-center">
                     
-
-                <Image 
-                        src="/piechart.png" 
-                        alt="pie chart" 
-                        width={1200}
-                        height={1200}/>
-                </div>        
 
                 {/* 5. CTA BANNER SECTION - This is the last section before the external footer */}
                 <CTABannerSection />
